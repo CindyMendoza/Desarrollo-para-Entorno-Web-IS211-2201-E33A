@@ -8,4 +8,9 @@ module.exports = app => {
         var data = require('../json/apartment.json');
         res.json(data);
     })
+
+    app.get('/api/cargo/getcargos', (req, res) => {
+        var data = require('../json/cargo.json');
+        res.json(data);
+    })
 }
