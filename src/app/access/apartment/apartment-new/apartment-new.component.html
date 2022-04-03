@@ -1,0 +1,29 @@
+<div class="login-dark" style="background-image: url(&quot;assets/img/backgrounds/form-bg.jpg&quot;);">
+    <form [formGroup]="apartmentForm" method="post" style="background-color: rgba(255,255,255,0.9);">
+        <h2 class="text-center" style="color: #ffa555;font-size: 26px; margin-bottom:20px;">Registrar<br>Departamento</h2>
+        <div class="form-group">
+            <select formControlName="tipo" class="form-control form-control-sm" style="color: rgb(0,0,0);">
+                <option value="" selected="">Tipo</option>
+                <option value="1">Duplex</option>
+                <option value="2">Estudio</option>
+                <option value="3">Flat</option>
+                <option value="4">Loft</option>
+                <option value="5">Mixto</option>
+                <option value="6">Penthouse</option>
+                <option value="7">Tradicional</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" formControlName="nombre" placeholder="Nombre" autocomplete="off" style="color: rgb(0,0,0);">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="number" formControlName="area" placeholder="Área en m²" style="color: rgb(0,0,0);">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="number" formControlName="piso" placeholder="Piso" style="color: rgb(0,0,0);">
+        </div>
+        <div class="form-group text-center">
+            <button (click)="__onSubmit()" class="btn btn-primary" type="submit" style="background-color: #ffa555;font-weight: normal;">Registrar</button>
+        </div>
+    </form>
+</div>

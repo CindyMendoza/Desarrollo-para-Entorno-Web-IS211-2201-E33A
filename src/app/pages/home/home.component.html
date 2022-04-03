@@ -1,0 +1,37 @@
+<header class="masthead" style="background-image: url(&quot;assets/img/backgrounds/header-bg.jpg&quot;);">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">
+                <span style="-webkit-text-stroke: 1px rgba(120,120,120,0.50);">Bienvenido a J&amp;J!</span>
+            </div>
+            <div class="intro-heading text-uppercase">
+                <span style="-webkit-text-stroke: 1px rgba(120,120,120,0.50);">&nbsp;CONTRUYENDO EL FUTURO</span>
+            </div>
+            <a class="btn btn-primary border-dark btn-xl text-uppercase js-scroll-trigger" role="button" href="#portfolio" style="background-color: rgb(255,165,85);border:none;">NUESTROS proyectos</a>
+        </div>
+    </div>
+</header>
+<section id="portfolio" class="bg-light" style="padding: 75px 0px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading">PROYECTOS</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div *ngFor="let p of projects" class="col-sm-6 col-md-4 portfolio-item">
+                <a routerLink="/project/{{ p.id }}" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="{{ p.image }}">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>{{ p.name }}</h4>
+                    <p class="text-muted"><strong><em>{{ p.price }}</em><br></strong></p>
+                    <p class="text-muted">{{ p.address }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
