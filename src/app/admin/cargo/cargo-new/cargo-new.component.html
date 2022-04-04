@@ -1,0 +1,28 @@
+<div class="container" style="padding-top: 120px;">
+    <h3>Cargo</h3>
+
+    <div class="row">
+        <div class="col-6">
+            <div class=""><h5>Registrar Cargo</h5></div>
+            <form [formGroup]="cargosForm">
+                <div class="form-group">
+                    <input type="text" formControlName="co_cargo" placeholder="Cargo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" formControlName="no_cargo" placeholder="Nombre de Cargo"
+                        class="form-control">
+                </div>
+                <div class="form-group">
+                
+                    <textarea rows="5" formControlName="descripcion_funcion" placeholder="Descripcion" class="form-control"></textarea>
+              
+                    </div>
+                <div class="form-group">
+                    <button (click)="__onSubmit()" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+        
+        
+    </div>
+</div>

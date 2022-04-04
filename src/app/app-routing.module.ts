@@ -18,6 +18,13 @@ import { ClienteNewComponent } from "./admin/cliente/cliente-new/cliente-new.com
 import { ClienteListComponent } from "./admin/cliente/cliente-list/cliente-list.component";
 import { EmpleadoNewComponent } from "./admin/empleado/empleado-new/empleado-new.component";
 import { EmpleadoListComponent } from "./admin/empleado/empleado-list/empleado-list.component";
+import { CargoListComponent } from "./admin/cargo/cargo-list/cargo-list.component";
+import { CargoNewComponent } from "./admin/cargo/cargo-new/cargo-new.component";
+import { CargoComponent } from "./admin/cargo/cargo.component";
+import { EnlaceListComponent } from "./admin/enlace/enlace-list/enlace-list.component";
+import { EnlaceNewComponent } from "./admin/enlace/enlace-new/enlace-new.component";
+import { RepositorioListComponent } from "./admin/repositorio/repositorio-list/repositorio-list.component";
+import { RepositorioNewComponent } from "./admin/repositorio/repositorio-new/repositorio-new.component";
 
 
 const routes: Routes = [
@@ -38,7 +45,14 @@ const routes: Routes = [
     { path: 'admin/cliente/new', component: ClienteNewComponent },
     { path: 'admin/cliente/list', component: ClienteListComponent },
     { path: 'admin/empleado/new', component: EmpleadoNewComponent },
-    { path: 'admin/empleado/list', component: EmpleadoListComponent }
+    { path: 'admin/empleado/list', component: EmpleadoListComponent },
+    {path:'admin/cargo', component:CargoComponent},
+    {path:'admin/cargo/new',component:CargoNewComponent},
+    {path:'admin/cargo/list',component:CargoListComponent},
+    {path:'admin/enlace/new',component:EnlaceNewComponent},
+    {path:'admin/enlace/list',component:EnlaceListComponent},
+    {path:'admin/repositorio/new',component:RepositorioNewComponent},
+    {path:'admin/repositorio/list',component:RepositorioListComponent}
 ];
 
 @NgModule({

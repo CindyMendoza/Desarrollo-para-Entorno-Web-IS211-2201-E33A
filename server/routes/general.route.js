@@ -28,4 +28,18 @@ module.exports = app => {
         var data = require('../json/empleado.json');
         res.json(data);
     })
+
+    app.get('/api/cargo/getcargos', (req, res) => {
+        var data = require('../json/cargo.json');
+        res.json(data);
+    })
+    app.get('/api/enlaces/getenlaces',(req,res)=>{
+        var data =require('../json/enlace.json');
+        res.json(data);
+
+    })
+    app.get('/api/repositorio/getrepositorio',(req,res)=>{
+        var data =require('../json/repositorio.json');
+        res.json(data);
+    })
 }

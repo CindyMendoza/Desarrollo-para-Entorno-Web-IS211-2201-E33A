@@ -1,0 +1,35 @@
+<section *ngIf="cargos[0]!=null" id="portfolio" style="padding: 75px 0px;background-image: url(&quot;assets/img/backgrounds/list-bg.jpg&quot;);">
+    <div class="container" style="margin-top: 90px;">
+        <div class="row justify-content-center" style="margin-bottom: -15px;">
+            <div class="login-dark" style="background-image: none;width: 95%;background-color: rgba(255,255,255,0.9);padding: 40px;border-radius: 4px;box-shadow: 3px 3px 4px rgba(0,0,0,0.2);height: auto;">
+                <h2 class="text-center" style="color: #ffa555;font-size: 26px; margin-bottom:20px;">Listado de Cargos</h2><a class="btn btn-primary" role="button" routerLink="/admin/cargo/new" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(255,165,85);margin: 15px;margin-right: 0;margin-left: 0;color: rgba(255,255,255,0.9);">Agregar Cargo</a>
+                <div
+                    class="table-responsive table-striped" style="border-radius: 10px;">
+                    <table class="table" style="margin:0px;">
+                        <thead style="background-color: rgba(52,58,64,0.75);color: rgb(255,255,255);">
+                            <tr>
+                                <th class="align-middle">Codigo</th>
+                                <th class="align-middle">Descripcion</th>
+                                <th class="align-middle"><strong>Funciones</strong><br></th>
+                                <th class="align-middle" style="text-align: center;"></th>
+                                <th class="align-middle" style="text-align: center;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr *ngFor="let c of cargos">
+                                <td class="align-middle">{{c.co_cargo}} </td>
+                                <td class="align-middle"><em>{{c.no_cargo}}</em><br></td>
+                                <td class="align-middle">{{c.descripcion_funcion}}<br></td>
+                                <td class="text-center"><a routerLink="/admin/cargo/new" class="btn btn-outline-dark"><i class="fa fa-pencil"></i></a></td>
+                                <td class="text-center"><a routerLink="/admin/cargo/list" class="btn btn-outline-danger"><i class="fa fa-remove"></i></a></td>
+                            </tr>
+                            
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
