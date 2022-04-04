@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './pages/home/home.component';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { TeamComponent } from './pages/team/team.component';
