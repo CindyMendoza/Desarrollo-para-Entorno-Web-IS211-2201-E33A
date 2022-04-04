@@ -9,9 +9,13 @@
                     <table class="table" style="margin:0px;">
                         <thead style="background-color: rgba(52,58,64,0.75);color: rgb(255,255,255);">
                             <tr>
+                                
                                 <th class="align-middle">Codigo</th>
-                                <th class="align-middle">Descripcion</th>
-                                <th class="align-middle"><strong>Funciones</strong><br></th>
+                                <th class="align-middle">URL</th>
+                                <th class="align-middle">Dominio</th>
+                                <th class="align-middle">Subdominio</th>
+                                <th class="align-middle">Subdominio</th>
+                                <th class="align-middle">Servidor</th>
                                 <th class="align-middle" style="text-align: center;"></th>
                                 <th class="align-middle" style="text-align: center;"></th>
                             </tr>
@@ -20,8 +24,11 @@
                         
                             <tr *ngFor="let c of enlaces">
                                 <td class="align-middle">{{c.co_enlace}} </td>
+                                <td class="align-middle">{{c.no_url}} </td>
                                 <td class="align-middle"><em>{{c.no_enlace}}</em><br></td>
-                                <td class="align-middle">{{c.descripcion_funcion}}<br></td>
+                                <td class="align-middle">{{c.no_dominio}}<br></td>
+                                <td class="align-middle">{{c.no_subdominio}}<br></td>
+                                <td class="align-middle">{{c.so_servidor}}<br></td>
                                 <td class="text-center"><a routerLink="/admin/enlace/new" class="btn btn-outline-dark"><i class="fa fa-pencil"></i></a></td>
                                 <td class="text-center"><a routerLink="/admin/enlace/list" class="btn btn-outline-danger"><i class="fa fa-remove"></i></a></td>
                             </tr>

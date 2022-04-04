@@ -1,1 +1,39 @@
-<p>repositorio-list works!</p>
+<section *ngIf="repositorios[0]!=null" id="portfolio" style="padding: 75px 0px;">
+    <div class="container" style="margin-top: 90px;">
+        <div class="row justify-content-center" style="margin-bottom: -15px;">
+            <div class="login-dark" style="background-image: none;width: 95%;background-color: rgba(255,255,255,0.9);padding: 40px;border-radius: 4px;box-shadow: 3px 3px 4px rgba(0,0,0,0.2);height: auto;">
+                <h2 class="text-center" style="font-size: 26px; margin-bottom:20px;">Listado de repositorios</h2>
+                <a class="btn btn-primary" role="button" routerLink="/admin/repositorio/new" style="font-family: Montserrat, sans-serif;font-weight: normal;margin: 15px;margin-right: 0;margin-left: 0;color: rgba(255,255,255,0.9);">Agregar repositorio</a>
+                <div
+                    class="table-responsive table-striped" style="border-radius: 10px;">
+                    <table class="table" style="margin:0px;">
+                        <thead style="background-color: rgba(52,58,64,0.75);color: rgb(255,255,255);">
+                            <tr>
+                                
+                                <th class="align-middle">Codigo</th>
+                                <th class="align-middle">URL</th>
+                                <th class="align-middle">Verrion</th>
+                                <th class="align-middle">Credenciales</th>
+                                <th class="align-middle" style="text-align: center;"></th>
+                                <th class="align-middle" style="text-align: center;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr *ngFor="let c of repositorios">
+                                <td class="align-middle">{{c.co_repositorio}} </td>
+                                <td class="align-middle">{{c.url_repositorio}}<br></td>
+                                <td class="align-middle">{{c.version}}</td>
+                                <td class="align-middle">{{c.registro_de_credenciales}}</td>
+                                <td class="text-center"><a routerLink="/admin/enlace/new" class="btn btn-outline-dark"><i class="fa fa-pencil"></i></a></td>
+                                <td class="text-center"><a routerLink="/admin/enlace/list" class="btn btn-outline-danger"><i class="fa fa-remove"></i></a></td>
+                            </tr>
+                            
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
