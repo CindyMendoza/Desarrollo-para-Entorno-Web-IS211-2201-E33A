@@ -1,0 +1,19 @@
+{
+    "data":[
+        {
+            "co_enlace": 1,
+            "no_url": "url",
+            "no_dominio": "super usuario",
+            "no_subdominio": "super usuario",
+            "so_servidor": "super usuario"
+        },
+        {
+            "co_enlace": 2,
+            "no_url": "url2",
+            "no_dominio": "super usuario",
+            "no_subdominio": "super usuario",
+            "so_servidor": "super usuario"
+        }
+        
+    ]
+}

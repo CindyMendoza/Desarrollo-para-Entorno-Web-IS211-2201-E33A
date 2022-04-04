@@ -3,7 +3,12 @@
         {
             "co_cargo": 1,
             "no_cargo": "administrador",
-            "descripcion": "super usuario²"
+            "descripcion": "super usuario"
+        },
+        {
+            "co_cargo": 2,
+            "no_cargo": "Contador",
+            "descripcion": "Contador de registro"
         }
     ]
 }
