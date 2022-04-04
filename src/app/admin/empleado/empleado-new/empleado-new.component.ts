@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
-=======
->>>>>>> aa953c0822971babb2c255901135d5d6cedf624a
 
 @Component({
   selector: 'app-empleado-new',

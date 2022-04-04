@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { ClienteService } from 'src/app/services/cliente.service';
+=======
+>>>>>>> aa953c0822971babb2c255901135d5d6cedf624a
 =======
 >>>>>>> aa953c0822971babb2c255901135d5d6cedf624a
 
@@ -10,6 +13,7 @@ import { ClienteService } from 'src/app/services/cliente.service';
   styleUrls: ['./cliente-list.component.css']
 })
 export class ClienteListComponent implements OnInit {
+<<<<<<< HEAD
   clientes : any = [] 
 
   constructor(
@@ -25,6 +29,12 @@ export class ClienteListComponent implements OnInit {
 
   ngOnInit(): void {
     this.__getClientes();
+=======
+
+  constructor() { }
+
+  ngOnInit(): void {
+>>>>>>> aa953c0822971babb2c255901135d5d6cedf624a
   }
 
 }
