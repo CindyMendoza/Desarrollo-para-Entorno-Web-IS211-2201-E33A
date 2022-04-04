@@ -16,6 +16,13 @@ import { ApartmentListComponent } from './access/apartment/apartment-list/apartm
 import { ProjectComponent } from './pages/project/project.component';
 import { ApartmentComponent } from './pages/apartment/apartment.component';
 
+import { ClienteNewComponent } from './admin/cliente/cliente-new/cliente-new.component';
+import { ClienteListComponent } from './admin/cliente/cliente-list/cliente-list.component';
+import { ProyectoNewComponent } from './admin/proyecto/proyecto-new/proyecto-new.component';
+import { ProyectoListComponent } from './admin/proyecto/proyecto-list/proyecto-list.component';
+import { EmpleadoListComponent } from './admin/empleado/empleado-list/empleado-list.component';
+import { EmpleadoNewComponent } from './admin/empleado/empleado-new/empleado-new.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +35,13 @@ import { ApartmentComponent } from './pages/apartment/apartment.component';
     ApartmentNewComponent,
     ApartmentListComponent,
     ProjectComponent,
-    ApartmentComponent
+    ApartmentComponent,
+    ClienteNewComponent,
+    ClienteListComponent,
+    ProyectoNewComponent,
+    ProyectoListComponent,
+    EmpleadoListComponent,
+    EmpleadoNewComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +50,7 @@ import { ApartmentComponent } from './pages/apartment/apartment.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
+
 export class AppModule { }

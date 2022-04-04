@@ -1,0 +1,66 @@
+<div class="container" style="padding-top: 120px;">
+    <h3>Cliente</h3>
+
+    <div class="row">
+        <div class="col-6">
+            <div class=""><h5>Registrar cliente</h5></div>
+            <form>
+                <div class="form-group">
+                    <input type="text" formControlName="co_cliente" placeholder="Codigo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" formControlName="no_cliente" placeholder="Nombre/Razon Social"
+                        class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="email" formControlName="Ruc/DNI" placeholder="Ingrese RUC/DNI" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-6">
+            <div class=""><h5>Registrar Representante</h5></div>
+            <form>
+                <div class="form-group">
+                    <input type="text" formControlName="co_contacto" placeholder="Codigo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" formControlName="no_contacto" placeholder="Ingresar nombre" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="email" formControlName="correo" placeholder="Ingrese correo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="email" formControlName="telefono" placeholder="Ingrese numero de telefono"
+                        class="form-control">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-default">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-6">
+            <div class=""><h5>Representantes</h5></div>
+            <form>
+                <div class="form-group">
+                    <input type="text" formControlName="co_contacto" placeholder="Codigo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" formControlName="no_contacto" placeholder="Ingresar nombre" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="email" formControlName="correo" placeholder="Ingrese correo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="email" formControlName="telefono" placeholder="Ingrese numero de telefono"
+                        class="form-control">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-default">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

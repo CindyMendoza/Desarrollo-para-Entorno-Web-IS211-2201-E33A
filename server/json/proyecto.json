@@ -1,0 +1,17 @@
+{
+    "data":[
+        {
+            "co_proyecto": 1,
+            "no_proyecto": "proyecto 1",
+            "fe_inicioproyecto": "",
+            "fe_finproyecto": "",
+            "co_cliente": 1,
+            "co_enlace": 1,
+            "co_repositorio": 1,
+            "colaboradores":[
+                {"co_empleado": 1},
+                {"co_empleado": 2}
+            ]
+        }
+    ]
+}
