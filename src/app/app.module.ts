@@ -22,6 +22,13 @@ import { ProyectoNewComponent } from './admin/proyecto/proyecto-new/proyecto-new
 import { ProyectoListComponent } from './admin/proyecto/proyecto-list/proyecto-list.component';
 import { EmpleadoListComponent } from './admin/empleado/empleado-list/empleado-list.component';
 import { EmpleadoNewComponent } from './admin/empleado/empleado-new/empleado-new.component';
+//import { CargoComponent } from './admin/cargo/cargo.component';
+import { CargoListComponent } from './admin/cargo/cargo-list/cargo-list.component';
+import { CargoNewComponent } from './admin/cargo/cargo-new/cargo-new.component';
+import { EnlaceNewComponent } from './admin/enlace/enlace-new/enlace-new.component';
+import { EnlaceListComponent } from './admin/enlace/enlace-list/enlace-list.component';
+import { RepositorioNewComponent } from './admin/repositorio/repositorio-new/repositorio-new.component';
+import { RepositorioListComponent } from './admin/repositorio/repositorio-list/repositorio-list.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +49,13 @@ import { EmpleadoNewComponent } from './admin/empleado/empleado-new/empleado-new
     ProyectoListComponent,
     EmpleadoListComponent,
     EmpleadoNewComponent,
+    //CargoComponent,
+    CargoListComponent,
+    CargoNewComponent,
+    EnlaceNewComponent,
+    EnlaceListComponent,
+    RepositorioNewComponent,
+    RepositorioListComponent
   ],
   imports: [
     BrowserModule,
