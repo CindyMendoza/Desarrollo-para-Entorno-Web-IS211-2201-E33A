@@ -36,7 +36,6 @@ module.exports = app => {
     app.get('/api/enlaces/getenlaces',(req,res)=>{
         var data =require('../json/enlace.json');
         res.json(data);
-
     })
     app.get('/api/repositorio/getrepositorio',(req,res)=>{
         var data =require('../json/repositorio.json');
