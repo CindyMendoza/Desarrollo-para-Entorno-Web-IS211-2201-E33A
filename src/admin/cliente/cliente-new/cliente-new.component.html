@@ -1,0 +1,69 @@
+<div class="container" style="padding-top: 120px;">
+    <h3>Cliente</h3>
+    <div class="row">
+        <div class="col-6">
+            <h5>Registrar cliente</h5>
+            <form [formGroup]="clientesForm">
+                <div class="form-group">
+                    <input type="text" formControlName="co_cliente" placeholder="Codigo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" formControlName="no_cliente" placeholder="Nombre/Razon Social"
+                        class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="email" formControlName="ruc_dni" placeholder="Ingrese RUC/DNI" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <button (click)="__onSubmit()" class="btn btn-primary">Guardar</button>
+                </div>
+            </form>
+
+            <div class="form-group">
+                <h5>Representantes</h5>
+                <div class="table-responsive table-striped" style="border-radius: 10px;">
+                    <table class="table" style="margin:0px;" >
+                        <thead style="background-color: rgba(52,58,64,0.75);color: rgb(255,255,255);">
+                            <tr>
+                                <th class="align-middle">codigo</th>
+                                <th class="align-middle">correo  -Telefono</th>
+                                <th class="align-middle" style="text-align: center;"></th>
+                                <th class="align-middle" style="text-align: center;"></th>
+                            </tr>
+                        </thead>
+                        <tbody *ngFor="representanteForm[0] != null">
+                            <tr *ngFor="let r of representanteForm.value">
+                                <td class="align-middle">{{r[1]}}</td>
+                                <td class="align-middle">{{r[2]}}<br>{{r[3]}}</td>
+                                <td class="text-center"><a routerLink="/admin/cliente/new" class="btn btn-outline-dark"><i class="fa fa-pencil"></i></a></td>
+                                <td class="text-center"><a routerLink="/admin/cliente/new" class="btn btn-outline-danger"><i class="fa fa-remove"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <h5>Registrar Representante</h5>
+            <form [formGroup]="representanteForm">
+                <div class="form-group">
+                    <input type="text" formControlName="co_contacto" placeholder="Codigo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" formControlName="no_contacto" placeholder="Ingresar nombre" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="email" formControlName="correo" placeholder="Ingrese correo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="email" formControlName="telefono" placeholder="Ingrese numero de telefono"
+                        class="form-control">
+                </div>
+                <div class="form-group">
+                    <button (click)="__onAddContacto()" class="btn btn-primary">Agregar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
