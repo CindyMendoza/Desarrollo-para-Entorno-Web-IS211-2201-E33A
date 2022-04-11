@@ -1,0 +1,20 @@
+{
+    "data":[
+        {
+            "co_empleado": 1,
+            "no_empleado": "Empleado 1",
+            "dni": "12345678",
+            "correo": "empleado1@ejemplo.com",
+            "telefono": "987654321",
+            "co_cargo": "1"
+        },
+        {
+            "co_empleado": 2,
+            "no_empleado": "Empleado 2",
+            "dni": "22345678",
+            "correo": "empleado2@ejemplo.com",
+            "telefono": "987654321",
+            "co_cargo": "1"
+        }
+    ]
+}
