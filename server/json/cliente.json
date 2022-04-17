@@ -1,0 +1,32 @@
+{
+    "data":[
+        {
+            "co_cliente": 1,
+            "no_cliente": "cliente 1",
+            "ruc_dni": "20123456781",
+            "representante": [
+                {
+                    "co_contacto":1,
+                    "no_contacto":"contacto 1",
+                    "correo":"contacto1@cliente.com",
+                    "telefono":"987654321"
+                }
+            ]
+
+        },
+        {
+            "co_cliente": 2,
+            "no_cliente": "cliente 2",
+            "ruc_dni": "20123456782",
+            "representante": [
+                {
+                    "co_contacto":2,
+                    "no_contacto":"contacto 2",
+                    "correo":"contacto1@cliente.com",
+                    "telefono":"987654321"
+                }
+            ]
+
+        }
+    ]
+}

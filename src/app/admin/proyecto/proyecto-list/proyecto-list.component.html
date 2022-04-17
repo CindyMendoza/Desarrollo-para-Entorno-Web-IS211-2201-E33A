@@ -1,0 +1,39 @@
+<section id="portfolio" style="padding: 75px 0px">
+    <div class="container" style="margin-top: 90px;">
+        <div class="row justify-content-center" style="margin-bottom: -15px;">
+            <div class="login-dark" style="background-image: none;width: 95%;background-color: rgba(255,255,255,0.9);padding: 40px;border-radius: 4px;box-shadow: 3px 3px 4px rgba(0,0,0,0.2);height: auto;">
+                <h2 class="text-center" style="font-size: 26px; margin-bottom:20px;">Listado de Proyectos</h2><a class="btn btn-primary" role="button" routerLink="/admin/proyecto/new" style="font-family: Montserrat, sans-serif;font-weight: normal;margin: 15px;margin-right: 0;margin-left: 0;">Agregar Proyecto</a>
+                <div class="table-responsive table-striped" style="border-radius: 10px;">
+                    <table class="table" style="margin:0px;">
+                        <thead style="background-color: rgba(52,58,64,0.75);color: rgb(255,255,255);">
+                            <tr>
+                                <th class="align-middle">codigo</th>
+                                <th class="align-middle">Proyecto</th>
+                                <th class="align-middle">fecha_Inicio</th>
+                                <th class="align-middle">Fecha_Entrega</th>
+                                <th class="align-middle">cliente</th>
+                                <th class="align-middle">Dominio</th>
+                                <th class="align-middle">repositorio</th>
+                                <th class="align-middle" style="text-align: center;"></th>
+                                <th class="align-middle" style="text-align: center;"></th>
+                            </tr>
+                        </thead>
+                        <tbody *ngIf="proyectos[0] != null">
+                            <tr *ngFor="let pro of proyectos">
+                                <td class="align-middle">{{pro.co_proyecto}}</td>
+                                <td class="align-middle">{{pro.no_proyecto}}</td>
+                                <td class="align-middle">{{pro.fe_inicioproyecto}}</td>
+                                <td class="align-middle">{{pro.fe_finproyecto}}</td>
+                                <td class="align-middle">{{pro.co_cliente}}</td>
+                                <td class="align-middle">{{pro.co_enlace}}</td>
+                                <td class="align-middle">{{pro.co_repositorio}}</td>
+                                <td class="text-center"><a routerLink="/admin/proyecto/new" class="btn btn-outline-dark"><i class="fa fa-pencil"></i></a></td>
+                                <td class="text-center"><a routerLink="/admin/proyecto/list" class="btn btn-outline-danger"><i class="fa fa-remove"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
