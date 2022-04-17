@@ -20,7 +20,6 @@ import { RepositorioNewComponent } from "./admin/repositorio/repositorio-new/rep
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
-
     //proyecto grupo 2
     { path: 'admin/proyecto/new', component: ProyectoNewComponent },
     { path: 'admin/proyecto/list', component: ProyectoListComponent },

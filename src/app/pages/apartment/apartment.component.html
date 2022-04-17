@@ -1,0 +1,68 @@
+<header *ngIf="project[0] != null" class="masthead" style="background-image: url('{{ project[0].image }}');">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">
+                <span style="-webkit-text-stroke: 1px rgba(120,120,120,0.50);">Proyecto {{ project[0].name }}</span>
+            </div>
+            <div class="intro-heading text-uppercase">
+                <span style="-webkit-text-stroke: 1px rgba(120,120,120,0.50);">
+                    DEPARTAMENTO<br>{{ apartment[0].name }}<br>
+                </span>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a class="btn btn-primary border-dark btn-xl text-uppercase js-scroll-trigger" role="button" href="#portfolio" style="background-color: rgb(255,165,85);border:none;">MIRA MÁS<br></a>
+                </div>
+                <div class="col-12" style="margin-top: 50px;">
+                    <a class="btn btn-primary border-dark btn-xl text-uppercase js-scroll-trigger" role="button" href="#portfolio" style="border:none;">COTIZAR<br></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="portfolio" class="bg-light" style="padding: 75px 0px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading">Imágenes</h2>
+            </div>
+        </div>
+        <div *ngIf="apartment[0] != null" class="row">
+            <div *ngFor="let a of apartment[0].image" class="col-sm-6 col-md-4 portfolio-item">
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                    </div><img class="img-fluid" src="{{ a.path }}" style="background-image: url(&quot;assets/img/departments/department-PacificHighway-01.jpg&quot;);"></a>
+                <div class="portfolio-caption">
+                    <h4>{{ a.place }}</h4>
+                    <p class="text-justify text-muted">{{ a.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio" class="bg-light" style="padding: 75px 0px;background-color: rgb(255,255,255)!important;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading">Vídeos</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <div style="width: 100%;padding-top: 56.25%;position:relative;"><iframe class="d-block" width="560" height="315" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/lDU9mnCvuoQ" style="width:100%;height:100%;position: absolute;top:0;"></iframe></div>
+                <div class="portfolio-caption">
+                    <h4>Apartamento</h4>
+                    <p class="text-justify text-muted">Un hermoso diseño y con buen acabado, teniendo mucha consideración en los detalles.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item">
+                <div style="width: 100%;padding-top: 56.25%;position:relative;"><iframe class="d-block" width="560" height="315" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/2nOOIVBkdxI" style="width:100%;height:100%;position: absolute;top:0;"></iframe></div>
+                <div class="portfolio-caption">
+                    <h4>Dormitorio</h4>
+                    <p class="text-justify text-muted">Dormitorio amplio y cómodo, con un ambiente acojedor para que puedas descansar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

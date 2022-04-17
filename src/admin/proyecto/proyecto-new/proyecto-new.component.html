@@ -1,0 +1,39 @@
+<div class="container" style="padding-top: 120px;">
+    <h3>Proyecto</h3>
+    <div class="row">
+        <div class="col-6">
+            <h5>Registrar Proyecto</h5>
+            <form [formGroup]="proyectoForm">
+                <div class="form-group">
+                    <input type="text" formControlName="co_proyecto" placeholder="Codigo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" formControlName="no_proyecto" placeholder="Nombre de proyecto" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="date" formControlName="fe_inicioproyecto" placeholder="Ingrese fecha de inicio" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="date" formControlName="fe_finproyecto" placeholder="Ingrese fecha de entrega" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Cliente</label>
+                    <select class="form-control" formControlName="co_cliente" id="exampleFormControlSelect1">
+                      <option value="1">cliente 1</option>
+                      <option value="2">cliente 2</option>
+                      <option value="3">cliente 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" formControlName="co_enlace" placeholder="Ingrese enlace" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" formControlName="co_repositorio" placeholder="Ingrese repositorio" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button (click)="__onSubmit()" class="btn btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
